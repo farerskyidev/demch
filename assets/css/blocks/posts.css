@@ -1,0 +1,2 @@
+.posts{padding:120px 0}.posts__title{color:violet}.posts__items{display:flex}@media (max-width:1024px){.posts__items{display:block}}.posts__items .col{width:50%}@media (max-width:1024px){.posts__items .col{width:100%}}.posts__item-one-image{width:100%;min-height:465px}.posts__item-one-image img{height:100%;width:100%;-o-object-fit:cover;object-fit:cover}
+/*# sourceMappingURL=../maps/blocks/posts.css.map */

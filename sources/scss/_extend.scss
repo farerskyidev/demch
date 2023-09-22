@@ -1,0 +1,77 @@
+@import "variables";
+
+%h {
+    clear: both;
+    margin: 0 0 15px;
+    //padding: 20px 0 0;
+    line-height: 1.25;
+    font-weight: 700;
+    font-family: $font-family-proba-pro;
+    &:first-child { 
+        padding-top: 0; 
+    }
+    span {
+        color: $purple;
+        border: 2px solid;
+        border-radius: 5px;
+    }
+}
+
+%h1 {
+    font-size: rem(125);
+    font-weight: 500;
+    line-height: rem(100);
+    margin-bottom: 40px;
+    @media (max-width: 1024px) {
+        font-size: rem(100);
+        line-height: rem(90);
+    }
+    @media (max-width: 768px) {
+        font-size: rem(105);
+        line-height: rem(95);
+    }
+    @media (max-width: 576px) {
+        font-size: rem(58);
+        line-height: rem(52);
+    }
+}
+%h2 {
+    font-size: rem(70);
+    font-weight: 500;
+    @media (max-width: 1024px) {
+        font-size: rem(65);
+    }
+    @media (max-width: 768px) {
+        font-size: rem(60);
+    }
+    @media (max-width: 576px) {
+        font-size: rem(50);
+    }
+    @media (max-width: 400px) {
+        font-size: rem(32);
+    }
+}
+%h3 {
+    font-size: rem(24);
+    font-weight: 600;
+    line-height: rem(30);
+    @media (max-width: 1024px) { 
+        font-size: rem(26);
+    }
+    @media (max-width: 576px) { 
+        font-size: rem(20);
+    }
+}
+%h4 {
+    font-size: rem(20);
+    font-weight: 600;
+    line-height: rem(26);
+}
+%h5 {} 
+
+%h6 {}
+
+%sm {
+    font-size: rem(14); 
+    line-height: rem(18);   
+}

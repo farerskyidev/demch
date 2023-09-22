@@ -1,0 +1,236 @@
+@import "variables";
+
+
+body {
+    background-color: $white; 
+}
+.social {
+    margin: 0;
+    display: flex; 
+    column-gap: 30px;
+    list-style-type: none;
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+.social-second {
+    margin: 0;
+    display: flex; 
+    column-gap: 60px;
+    list-style-type: none;
+    &__icon {
+        width: 40px;
+        height: 40px;
+        transition: all 0.3s;     
+        &:hover,
+        &:focus,
+        &:active {
+            transform: scale(1.2);
+        }
+    }
+}
+.section-element {
+    margin: 120px 0;
+    @media (max-width: 575px) {
+        margin: 60px 0;          
+    }
+}
+.btn {
+    text-decoration: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    width: fit-content;
+    text-align: center;
+    font-size: rem(24);
+    transition: all 0.4s;
+    line-height: rem(28);
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+        outline: none;
+    }
+    &_primary {
+        position: relative;    
+        background-color: transparent;
+        border: 2px solid $purple;
+        color: $purple;
+        padding: 18px 15px;
+        z-index: 1;
+        text-decoration: none;
+        &:hover,
+        &:focus,
+        &:active {
+            opacity: 0.8;
+            color: $purple;
+        }
+    }
+    &_secondary {
+      
+        background-color: transparent;
+        border: 2px solid $white;
+        color: $white;
+        padding: 18px 15px; 
+        
+        text-decoration: none;
+        &:hover,
+        &:focus,
+        &:active {
+            opacity: 0.8;
+            color: $white;
+        }
+    }
+
+    &_thirth {
+      
+        background-color: transparent;
+        border: 2px solid $dark-blue;
+        color: $dark-blue;
+        padding: 18px 15px; 
+        
+        text-decoration: none;
+        &:hover,
+        &:focus,
+        &:active {
+            opacity: 0.8;
+            color: $dark-blue;
+        }
+    }
+}
+.category {
+    @extend %sm;
+    padding: 4px 17px;
+    border-radius: 60px;
+    background-color: $orange;
+    color: $blue; 
+}
+.container {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1366px;
+    @media (max-width: 576px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.menu {
+    a { 
+        line-height: 19.2px;
+        letter-spacing: 0.2px;
+        font-weight: 600;
+    }
+    li {
+        margin: 0 15px;
+    }
+}
+@keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+.modal-open {
+    overflow: hidden;
+}
+.mb-60 {
+    margin-bottom: 60px!important;
+    @media (max-width: 992px) {
+        margin-bottom: 45px!important;
+    }
+    @media (max-width: 575px) {
+        margin-bottom: 30px!important;
+    }
+}
+
+.mt-120 {
+    margin-top: 120px!important;
+    @media (max-width: 992px) {
+        margin-top: 90px!important; 
+    }
+    @media (max-width: 575px) {
+        margin-top: 60px!important;
+    }
+}
+.mb-120 {
+    margin-bottom: 120px!important;
+    @media (max-width: 992px) {
+        margin-bottom: 90px!important;
+    }
+    @media (max-width: 575px) { 
+        margin-bottom: 60px!important;
+    }
+}
+.post-type-archive-publication {
+    header {
+        background-color: $violet;
+        position: inherit;
+        .container {
+            margin: 0; 
+        }
+    }
+    .container {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+}
+.single-publication {
+    header {
+        background-color: $violet;
+        position: inherit;
+        .container {
+            margin: 0; 
+        }
+    }
+    .container {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }  
+}
+.page-template-default {
+    header {
+        background-color: $violet;
+        position: inherit;
+        .container {
+            margin: 0; 
+        }
+    }
+    .container {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+}
+
+.error404  {
+    header {
+        background-color: $violet; 
+        position: inherit;
+        .container {
+            margin: 0; 
+        }
+    }
+    .container {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+}

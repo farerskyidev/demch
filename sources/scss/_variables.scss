@@ -1,0 +1,37 @@
+@use "sass:math";
+
+@import "mixins/functions";
+@import "mixins/mixins"; 
+@import "fonts";   
+
+
+// Base custom typography style set
+$font-family-proba-pro: 'ProbaPro';
+
+
+// Base typography style
+$base-font-size: 16px; // Sets the base font size
+$base-line-height: 1.8; // Sets the base line height
+$base-font-family: $font-family-proba-pro; // Sets the base font family  
+
+$white-20: rgba(255, 255 ,255, 0.2); 
+
+$light-grey: rgb(0, 0, 0, 0.4);
+$light-grey-2: rgb(0, 0, 0, 0.1);
+$violet-light: rgba(105,105,185,0.2); 
+
+
+$black-20: rgba(0, 0, 0, 0.2); 
+$black-60: rgba(0, 0, 0, 0.6); 
+
+// Colors
+$brand-primary: #000000;
+$white: #ffffff;
+$second-white: #F7F4F0; 
+
+$dark-blue: #080820;
+
+
+$orange: #FADF4F; 
+$violet: #6969B9; 
+$blue: #2E308C; 

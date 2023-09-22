@@ -1,0 +1,93 @@
+.hero {
+    background-color: $violet;
+    height: 660px;
+    overflow: hidden;
+    position: relative;
+    // @media (max-width: 1024px) {
+    //     height: 768px; 
+    // }
+    @media (min-width: 1024px) and (max-width: 1366px) {
+        height: 768px;  
+    }
+    @media (max-width: 768px) {
+        height: 1024px;  
+    }
+    @media (max-width: 576px) {
+        height: 680px;  
+    }
+    &__logo {
+        margin: auto;
+        @media (max-width: 992px) {
+            max-width: 300px;   
+        }
+        @media (max-width: 575px) {
+            max-width: 250px;   
+        }   
+    }
+    &__wrap {
+        height: 100%;
+        display: flex;
+        padding-top: 150px;
+        @media (max-width: 1024px) {
+            padding-top: 185px;  
+        }
+        @media (max-width: 768px) {
+            padding-top: 180px;  
+        }
+        @media (max-width: 576px) {
+            padding-top: 150px;  
+        }
+    }
+    &__text {
+        z-index: 1;
+        max-width: 570px;
+        color: $white;
+    }
+    &__background {
+        height: 100%;
+        width: 100%; 
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        @media (max-width: 1366px) { 
+            bottom: -15%;
+            left: 15%; 
+        }
+        @media (max-width: 768px) { 
+            bottom: -17%;
+            left: 13%; 
+        } 
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        position: relative;
+        p {
+            color: $white;
+        }
+        .down {
+            position: absolute;
+            top: calc( 50% - 9px);
+            left: calc( 50% - 9px);
+            @media (max-width: 575px) { 
+                top: calc(100% + 30px);   
+            }
+        }
+        .social__icon {
+            opacity: 0.6;
+            transition: all 0.3s;
+            &:hover,
+            &:focus,
+            &:active {
+                opacity: 1;
+            }
+        }
+        @media (max-width: 575px) { 
+            display: block;   
+            margin-bottom: 80px;  
+        }
+    }
+}
+
+
